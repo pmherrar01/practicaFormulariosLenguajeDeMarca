@@ -4,3 +4,20 @@
     text-align: center;
     background-color: blueviolet;
 }
+
+#subtitulo{
+    margin: 1%;
+}
+
+#div-contenido{
+    margin-left: 1%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+    margin-top: 1%;
+}

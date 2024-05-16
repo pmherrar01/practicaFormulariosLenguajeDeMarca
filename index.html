@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header class="container-fluid texto-cabecera ">  
+    <header class="container-fluid texto-cabecera" id="inicio">  
             <div>
                 <h1>Formularios</h1>
             </div>
@@ -26,32 +26,65 @@
     </nav>
 
     <main class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-12 col-xl-12">
-                <h4 class="text-center">Todos los tipos de formularios formularios html</h4>
-                <form>
-                    <label for="fname">Nombre y Apellidos:</label><br>
-                    <input type="text"><br>
-                    <label for="fname">Apellidos:</label><br>
-                    <input type="text"><br>
-                    <label for="fname">Correo electronico:</label><br>
-                    <input type="email"><br>
-                    <label for="fname">Contraseña:</label><br>
-                    <input type="password"><br>
-                    <label for="fname">Nº de telefono:</label><br>
-                    <input type="number"><br>
-                    <label for="fname">Seleccione un opción:</label><br>
-                    <input type="checkbox"><br>
-                    <input type="radio"><br>
-                    <label for="fname">Nº de telefono:</label><br>
+        <div>
+            <h3 class="text-center" id="subtitulo">Todos los tipos de formularios formularios html</h3>
+            <div class="row" id="div-contenido">
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
 
-                </form>
+                    <form>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" required><br><br>
+                        <label for="apellido">Apellidos:</label><br>
+                        <input type="text" required><br><br>
+                        <label for="correo">Correo electronico:</label><br>
+                        <input type="email" required><br><br>
+                        <label for="contraseña">Contraseña:</label><br>
+                        <input type="password" required><br><br>
+                        <label for="numeros">Nº de tipos de formularios que conoces:</label><br>
+                        <input type="number" min="1" max="10"><br><br>
+                        <label for="phone">Número de telefono:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+34" required><br><br>
+                        <label for="fecha">Cambiar fecha</label><br>
+                        <input type="date">
+                        <input type="submit" value="cambiar"><br><br><br>
+                        <button type="button" onclick="alert('Datos enviados')">Enviar</button>
+
+                    </form>
+                </div>
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <form>
+                        <p>Seleccione una opción:</p>
+                        <label for="hombre">Hombre</label>
+                        <input type="checkbox"><br>br
+                        <label for="mujer">Mujer</label>
+                        <input type="checkbox"><br>
+                        <label for="otro">otro</label>
+                        <input type="checkbox"><br>
+                        <p>Que lenguaje prefieres entre estas opciones:</p>
+                        <input type="radio">
+                        <label>JavaScript</label><br>
+                        <input type="radio">
+                        <label>Java</label><br>
+                        <input type="radio">
+                        <label>HTML</label><br>
+                        <input type="radio">
+                        <label>C++</label><br>
+                        <label for="color">Seleciona tu color preferido</label><br>
+                        <input type="color">
+                        <input type="button" value="Seleccionar"><br><br>
+                        <input type="reset" value="Resetear">
+                    </form>
+                </div>
             </div>
         </div>
     </main>
     
-    <footer>
-
-    </footer>
+    <footer class="footer">
+        <div class="container">
+            <br>
+            <p>Formularios hechos por Pablo Manuel Herrera Rodríguez</p>
+        </div>
+      </footer>
 </body>
 </html>
