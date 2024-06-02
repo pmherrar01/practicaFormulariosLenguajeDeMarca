@@ -34,20 +34,29 @@
                     <form>
                         <label for="nombre">Nombre:</label><br>
                         <input type="text" required><br><br>
+                        
                         <label for="apellido">Apellidos:</label><br>
                         <input type="text" required><br><br>
+                        
                         <label for="correo">Correo electronico:</label><br>
                         <input type="email" required><br><br>
+                        
                         <label for="contraseña">Contraseña:</label><br>
                         <input type="password" required><br><br>
+                        
                         <label for="numeros">Nº de tipos de formularios que conoces:</label><br>
                         <input type="number" min="1" max="10"><br><br>
+                        
                         <label for="phone">Número de telefono:</label><br>
                         <input type="tel" id="phone" name="phone" placeholder="+34" required><br><br>
+                        
                         <label for="fecha">Cambiar fecha</label><br>
                         <input type="date">
+                        
                         <input type="button" value="cambiar" onclick="alert('Fecha cambiada')"><br><br><br>
+                        
                         <button type="submit">Enviar</button>
+                        
                         <input type="reset" value="Resetear">
                     </form>
                 </div>
@@ -55,24 +64,39 @@
                 <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
                     <form>
                         <p>Seleccione una opción:</p>
-                        <label for="hombre">Hombre</label>
-                        <input type="checkbox"><br>br
-                        <label for="mujer">Mujer</label>
-                        <input type="checkbox"><br>
-                        <label for="otro">otro</label>
-                        <input type="checkbox"><br>
-                        <p>Que lenguaje prefieres entre estas opciones:</p>
-                        <input type="radio">
-                        <label>JavaScript</label><br>
-                        <input type="radio">
-                        <label>Java</label><br>
-                        <input type="radio">
-                        <label>HTML</label><br>
-                        <input type="radio">
-                        <label>C++</label><br>
+                        <input type="radio"  name="sexo" value="masculino" required>
+                        <label for="sexo-masculino">Masculino</label><br>
+                        
+                        <input type="radio"  name="sexo" value="femenino" required>
+                        <label for="sexo-femenino">Femenino</label><br>
+                        
+                        <input type="radio"  name="sexo" value="otro" required>
+                        <label for="sexo-otro">Otro</label><br><br>
+
+                        <p>Seleciona todos los titulos academicos que obtines:</p>
+                        <input type="checkbox" name="estudio" value="ESO">
+                        <label for="vehicle1">ESO</label><br>
+                        
+                        <input type="checkbox" name="estudio" value="Bachillerato">
+                        <label for="vehicle2">Bachillerato</label><br>
+                        
+                        <input type="checkbox" name="estudio" value="Grado Medio">
+                        <label for="vehicle3">Grado Medio</label><br>
+                        
+                        <input type="checkbox" name="estudio" value="Grado Superior">
+                        <label for="vehicle3">Grado Superior</label><br>
+
+                        <input type="checkbox" name="estudio" value="Grado">
+                        <label for="vehicle3">Grado</label><br>
+
+                        <input type="checkbox" name="estudio" value="Otros titulos o certificaciones">
+                        <label for="vehicle3">Otros titulos o certificaciones</label><br><br>
+                        
                         <label for="color">Seleciona tu color preferido</label><br>
                         <input type="color">
+                        
                         <input type="button" value="Seleccionar"><br><br>
+                        
                         <input type="reset" value="Resetear">
                     </form>
                 </div>
